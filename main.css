@@ -1,0 +1,171 @@
+@import "desktop.css";
+@import "mobile.css";
+@import "tablet.css";
+
+body{
+    margin: 0;
+
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFE7E7;
+    grid-area: header;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul{
+  display: flex;
+  gap: 50px;
+}
+.dal{
+  padding-top: 20px;
+  
+}
+#title{
+margin: 0 auto;
+padding: 50px 0;
+ font-family: 'Noticia Text';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 50px;
+ color: #1044FF;
+ text-align: center;
+ background-color: #FFE7E7;
+}
+
+
+.navigation{
+    display:flex;
+    justify-content: center;
+    grid-area: nav;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr,1fr,1fr;
+  grid-template-areas :
+  "header header header"
+  "daniel daniel daniel"
+  "main main main"
+  "contact contact contact"
+  "cole cole cole"
+  "footer footer footer"
+  ;
+}
+
+
+.main{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr,1fr,1fr;
+  grid-template-areas :
+  "item1 item2 post"
+  "item3 item4 post";
+}
+.item1{
+  grid-area: item1;
+}
+.item2{
+  grid-area: item2;
+}
+.item3{
+  grid-area: item3;
+}
+.item4{
+  grid-area: item4;
+}
+.post{
+  grid-area: post;
+}
+
+
+.daniel{
+  grid-area: daniel;
+  width: 100%;
+}
+
+/*.columns{
+  display:grid;
+  max-width:  1200px;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "dan social social";
+  margin: 0 auto;
+  background-color: #1044FF;
+
+}
+
+.dan{
+  grid-area: dan;
+}
+.social{
+  grid-area: social;
+  display: flex;
+}
+*/
+.cole{
+  background-color: #c0acc9;
+  grid-area: cole;
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "left-col right-col";
+}
+.cole ul{
+  list-style: none;
+}
+.left-col{
+  grid-area: left-col;
+}
+.right-col{
+  grid-area: right-col;
+  display: flex;
+  gap: 2rem;
+}
+.footer{
+    background-color: #c0acc9;
+    grid-area: footer;
+    width: 1200px;
+    margin: 0 auto;
+}
+#share{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #1044FF;
+
+}
+#contact-me{
+  font-family: 'Noticia Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  text-align: center;
+  color: #112A52;
+}
+.contact{
+  background-color: #FFE7E7;
+  grid-area: contact;
+  
+}
+.communicate{
+display:flex;
+justify-content: space-around;
+
+}
+.office, .call, .write{
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
