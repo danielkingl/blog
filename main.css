@@ -73,11 +73,12 @@ padding: 50px 0;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   grid-area: content;
+  gap: 5px;
 }
 .item{
-  max-width: 35%;
+  flex-shrink: 1;
+  flex-basis: 40%;
 }
 .post{
   grid-area: post;
@@ -117,6 +118,7 @@ padding: 50px 0;
 }
 .content img{
   width: 100%;
+  margin-bottom: 1rem;
 }
 #share{
   font-family: 'Source Sans Pro';

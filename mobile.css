@@ -28,5 +28,9 @@
         align-items: center;
         flex-direction: column;
     }
+    div.content{
+       flex-direction: column;
+    }
     
 }
+     
