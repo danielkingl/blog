@@ -1,11 +1,11 @@
 @import "desktop.css";
 @import "mobile.css";
 @import "tablet.css";
-
-body{
-    margin: 0;
-
+*{margin: 0;
+  padding: 0;
 }
+
+
 .header{
     display: flex;
     justify-content: space-around;
@@ -43,10 +43,10 @@ padding: 50px 0;
 }
 
 .container{
-  width: 1200px;
-  margin: 0 auto;
+  
   display: grid;
-  grid-template-columns: 1fr,1fr,1fr;
+  padding: 3rem 6rem 0 6rem;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas :
   "header header header"
   "daniel daniel daniel"
@@ -61,7 +61,7 @@ padding: 50px 0;
 .main{
   grid-area: main;
   display: grid;
-  grid-template-columns: 1fr,1fr,1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas :
   "item1 item2 post"
   "item3 item4 post";
@@ -111,8 +111,6 @@ padding: 50px 0;
 .cole{
   background-color: #c0acc9;
   grid-area: cole;
-  width: 1200px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
@@ -132,8 +130,7 @@ padding: 50px 0;
 .footer{
     background-color: #c0acc9;
     grid-area: footer;
-    width: 1200px;
-    margin: 0 auto;
+    
 }
 #share{
   font-family: 'Source Sans Pro';
