@@ -1,16 +1,19 @@
-@import "desktop.css";
+
 @import "mobile.css";
 @import "tablet.css";
 *{margin: 0;
   padding: 0;
 }
 
-
+nav ul li:first-child {
+  display: none;
+}
 .header{
     display: flex;
     justify-content: space-around;
     background-color: #FFE7E7;
     grid-area: header;
+    padding: 10px;
 }
 nav ul li{
   display: inline-block;
@@ -19,10 +22,7 @@ nav ul{
   display: flex;
   gap: 50px;
 }
-.dal{
-  padding-top: 20px;
-  
-}
+
 #title{
 margin: 0 auto;
 padding: 50px 0;
@@ -59,55 +59,38 @@ padding: 50px 0;
 
 
 .main{
+  padding: 0.5rem 1rem 0 1rem;
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas :
-  "item1 item2 post"
-  "item3 item4 post";
+  "content content post"
+  "content content post";
 }
-.item1{
-  grid-area: item1;
+
+.content{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  grid-area: content;
 }
-.item2{
-  grid-area: item2;
-}
-.item3{
-  grid-area: item3;
-}
-.item4{
-  grid-area: item4;
+.item{
+  flex-basis: 50%;
 }
 .post{
   grid-area: post;
 }
-
+.link{
+  align-self: flex-start;
+}
 
 .daniel{
   grid-area: daniel;
   width: 100%;
 }
 
-/*.columns{
-  display:grid;
-  max-width:  1200px;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: 
-  "dan social social";
-  margin: 0 auto;
-  background-color: #1044FF;
-
-}
-
-.dan{
-  grid-area: dan;
-}
-.social{
-  grid-area: social;
-  display: flex;
-}
-*/
 .cole{
   background-color: #c0acc9;
   grid-area: cole;
@@ -156,13 +139,20 @@ padding: 50px 0;
 }
 .communicate{
 display:flex;
-justify-content: space-around;
-
+justify-content: center;
+flex-wrap: wrap;
+align-items: center;
+padding: 20px;
+gap: 6px;
 }
 .office, .call, .write{
   background: rgba(255, 255, 255, 0.55);
   border-radius: 10px;
   padding: 20px;
 }
-
-
+.communicate div{
+  width: 100%;
+}
+.intro{
+  flex-basis: 100%;
+}

@@ -1,0 +1,32 @@
+@media(max-width: 400px){
+    section.cole
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-col ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    body.container{
+        padding: 0.5rem 1rem 0 1rem;
+    }
+    footer.footer{
+        text-align: center;
+    }
+    main.main{
+        grid-template-areas: 
+        "content content content"
+        "post post post";
+    }
+    main .post{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+}

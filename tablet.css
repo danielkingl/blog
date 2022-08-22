@@ -1,0 +1,25 @@
+@media(max-width: 550px){
+    .hide{
+        display:none;
+      }
+    .navigation ul{
+       display: flex;
+       flex-direction: column;
+    }  
+    header.header{
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .header nav ul li:first-child {
+        display: block;
+        font-size: 28px;
+      }
+
+    .header nav ul .link{
+
+        opacity: 0;
+    } 
+    .header nav ul li:first-child:hover ~ .link{
+       opacity: 1;
+    }
+}
