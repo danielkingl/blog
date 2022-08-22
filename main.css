@@ -161,4 +161,5 @@ gap: 6px;
 .intro{
   flex-basis: 100%;
   flex-wrap: nowrap;
+  flex-direction: column;
 }
