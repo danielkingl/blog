@@ -4,7 +4,12 @@
 *{margin: 0;
   padding: 0;
 }
-
+p{
+  font-size: 16px;
+}
+li{
+  font-size: 14px;
+}
 nav ul li:first-child {
   display: none;
 }
@@ -96,19 +101,20 @@ padding: 50px 0;
   background-color: #c0acc9;
   grid-area: cole;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  
+  margin: 0 0;
+  grid-template-columns: 1fr;
   grid-template-areas: 
-  "left-col right-col";
+  "right-col";
 }
 .cole ul{
   list-style: none;
 }
-.left-col{
-  grid-area: left-col;
-}
 .right-col{
   grid-area: right-col;
   display: flex;
+  align-items: center;
+  justify-content:space-around;
   gap: 2rem;
 }
 .footer{
