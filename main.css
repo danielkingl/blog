@@ -163,3 +163,6 @@ gap: 6px;
   flex-wrap: nowrap;
   flex-direction: column;
 }
+ol li {
+  list-style-type: none;
+}
