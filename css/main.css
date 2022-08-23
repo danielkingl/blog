@@ -1,6 +1,6 @@
-@import "var.css";
-@import "mobile.css";
-@import "tablet.css";
+@import "/css/var.css";
+@import "/css/mobile.css";
+@import "/css/tablet.css";
 *{margin: 0;
   padding: 0;
 }
